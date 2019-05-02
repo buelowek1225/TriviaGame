@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--CSS Style Sheet link  -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <!-- Here we added a link to the jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trivia Game</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="main-body">
+        <div class="row">
+            <div class="gametitle">
+                <h1>GEO-TRIVIA!!!</h1>
+            </div>
+        </div>
+        <!-- start button -->
+        <div class="button">
+            <br>
+            <button class="btn1">Hide</button>
+            <button class="btn2">Start</button>
+            <br>
+        </div>
+        <div class="main.container testcont">
+            <!-- counter.time.remaining -->
+            <div class="row test2">
+                <div class="timeleft">
+                    <br>
+                    <h2>Time Remaining: </h2>
+                    <div id="timer"></div>
+                    <br>
+                </div>
+            </div>
+            <!-- Div for Quiz -->
+            <div class="Quiz">
+                <div>
+                    <form action="test1">
+                        <h2>1.  Which mineral has the formula SiO2?</h2>
+                        <input type="radio" name="mineral1" value="quartz">Quartz  
+                        <input type="radio" name="mineral1" value="serpentine">Serpentine  
+                        <input type="radio" name="mineral1" value="biotite">Biotite 
+                        <input type="radio" name="mineral1" value="plagioclase">Plagioclase
+                        <br>
+                        <br>  
+                        <h2>2.  What type of plate boundary is the San Andres Fault System?</h2>
+                        <input type="radio" name="boundary1" value="converg">Convergent  
+                        <input type="radio" name="boundary1" value="diverg">Divergent  
+                        <input type="radio" name="boundary1" value="hs">Hot-spot 
+                        <input type="radio" name="boundary1" value="transf">Transform
+                        <br>
+                        <br>  
+                        <h2>3.  Which rock type is formed from the break down of rock, depositing, and cementation process?</h2>
+                        <input type="radio" name="rock1" value="sedi"> Sedimentary  
+                        <input type="radio" name="rock1" value="ign"> Igneous
+                        <input type="radio" name="rock1" value="volc"> Volcanic 
+                        <input type="radio" name="rock1" value="meti"> Metamorphic
+                        <br>
+                        <br>  
+                        <h2>4.  Reptiles and dinosaurs were abundant during?</h2>
+                        <input type="radio" name="period1" value="tri">The Triassic Period
+                        <input type="radio" name="period1" value="cret">The Cretaceous Period 
+                        <input type="radio" name="period1" value="juras">The Jurassic Period
+                        <input type="radio" name="period1" value="all">All of the Above 
+                        <br>
+                        <br>  
+                        <h2>5.  The mid-atlanitic ridge is what kind of plate boundary?</h2>
+                        <input type="radio" name="plates" value="p-div">divergent 
+                        <input type="radio" name="plates" value="p-trans">transform  
+                        <input type="radio" name="plates" value="p-conv">convergent 
+                        <input type="radio" name="plates" value="pdivtrans">divergent and transform  
+                        <br>
+                        <br>  
+                    </form>
+                </div>
+            </div>
+            <!-- Div Button to Submit -->
+            <div>
+                <input type="submit">
+                <br>
+                <br>  
+            </div>
+            <!-- Div to Display your results -->
+            <div>
+                <h2 id="finalresults">Your Results</h2>
+                <br>
+                <br>  
+            </div>
+        </div>
+    </div>
+</body>
+
+ <!-- Javascript link -->
+ <script src="assets/javascript/app.js"></script>
+
+</html>
