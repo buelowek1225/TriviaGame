@@ -1,3 +1,4 @@
+//funtion to yeild results and change containers/views
 function calculateTotal() {
   $(".btn2").hide();
   $(".testcont").hide();
@@ -26,6 +27,7 @@ var counter
   $(".testcont2").hide();
   $(".btn2").click(function(){
     $(".testcont").show();
+    $(".btn2").hide();
     // set the countdown
     // on click start timer to count down 30 seconds  
     var countdown=35;
