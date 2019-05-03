@@ -1,39 +1,85 @@
+function calculateTotal() {
+  $(".btn2").hide();
+  $(".testcont").hide();
+  $(".testcont2").show();
+  // console.log($('form').serializeArray())
+  var quizresults = $('form').serializeArray();
+  var finalscore = 0
+  var incorrectquest = 0
+  for (var i=0; i < quizresults.length; i++) {
+    if(quizresults[i].value === "True") {
+      finalscore++
+    }
+    else {
+      incorrectquest++
+    }
+  }
+  // print final score 
+  $("#finalresults").text("Total Correct:" + " " +finalscore + "/5")
+  $("#wrongquestion").text("Total Inorrect:" + " " +incorrectquest + "/5")
+}
+
 // Start Button and Hide
 $(document).ready(function(){
-    $(".btn1").click(function(){
-      $(".testcont").hide();
-    });
-    $(".btn2").click(function(){
-      $(".testcont").show();
-      // set the countdown
-      // on click start timer to count down 30 seconds  
-      var countdown=30;
+var counter
+  $(".testcont").hide();
+  $(".testcont2").hide();
+  $(".btn2").click(function(){
+    $(".testcont").show();
+    // set the countdown
+    // on click start timer to count down 30 seconds  
+    var countdown=35;
+    counter=setInterval(timer, 1000);
+    // the counter interval will run every 1 sec/1000ms
 
-        // the counter interval will run every 1 sec/1000ms
-        var counter=setInterval(timer, 1000);
-
-        // function will remove -1 each secont
-        function timer() {
-            countdown=countdown-1;
-            if (countdown < 0){
-                clearInterval(counter);
-                alert("TIMES UP!");
-                return;
-            }
-            $("#timer").text(countdown);
-
+    // function will remove -1 each second
+    function timer() {
+        countdown=countdown-1;
+        if (countdown < 0){
+            clearInterval(counter);
+            alert("TIMES UP!");
+            calculateTotal();
+            return;
         }
+        $("#timer").text(countdown);
 
-        //call the function
-        timer();
+    }
+    //call the function
+    timer();
 
-        console.log(countdown);
-    });
+    $(".btn3").click(function(){
+      clearInterval(counter);
+      calculateTotal();
+    })
   });
+});
 
+//submit click button
+// $(document).ready(function(){
+//   // $(".btn3").click(function(){
+//   //   clearInterval(counter);
+//   //   $(".btn2").hide();
+//   //   $(".testcont").hide();
+//   //   $(".testcont2").show();
+//   //   // console.log($('form').serializeArray())
+//   //   var quizresults = $('form').serializeArray();
+//   //   var finalscore = 0
+//   //   for (var i=0; i < quizresults.length; i++) {
+//   //     console.log(quizresults[i].value)
+//   //     if(quizresults[i].value === "True") {
+//   //       finalscore++
+//   //     }
+//   //   }
+//   //   // print final score 
+//   //   $("#finalresults").text(finalscore)
+//   //   //this is where I need to review my questions, check results and yeild the score
+//   //   // function check(){
+      
+//   //   // }
+//   //   // $(input[type=radio]).on('change'), function() {
+
+//   //   // }
+//   // })
+// })
 
 // when the timer ends alert you lost show score, clear all selected, and reset timer
-
-// on click "submit", check results, post results, and 
-$("#finalresults").text()
-

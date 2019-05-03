@@ -23,15 +23,13 @@
 <body>
     <!-- header -->
     <div class="main-body">
-        <div class="row">
-            <div class="gametitle">
+        <div class= "container gametitle">
                 <h1>GEO-TRIVIA!!!</h1>
-            </div>
         </div>
         <!-- start button -->
         <div class="button">
             <br>
-            <button class="btn1">Hide</button>
+            <!-- <button class="btn1">Hide</button> -->
             <button class="btn2">Start</button>
             <br>
         </div>
@@ -50,38 +48,38 @@
                 <div>
                     <form action="test1">
                         <h2>1.  Which mineral has the formula SiO2?</h2>
-                        <input type="radio" name="mineral1" value="quartz">Quartz  
-                        <input type="radio" name="mineral1" value="serpentine">Serpentine  
-                        <input type="radio" name="mineral1" value="biotite">Biotite 
-                        <input type="radio" name="mineral1" value="plagioclase">Plagioclase
+                        <input type="radio" name="q1" class="points" value="True">Quartz  
+                        <input type="radio" name="q1" class="points" value="False">Serpentine  
+                        <input type="radio" name="q1" class="points" value="False">Biotite 
+                        <input type="radio" name="q1" class="points" value="False">Plagioclase
                         <br>
                         <br>  
                         <h2>2.  What type of plate boundary is the San Andres Fault System?</h2>
-                        <input type="radio" name="boundary1" value="converg">Convergent  
-                        <input type="radio" name="boundary1" value="diverg">Divergent  
-                        <input type="radio" name="boundary1" value="hs">Hot-spot 
-                        <input type="radio" name="boundary1" value="transf">Transform
+                        <input type="radio" name="q2" class="points" value="False">Convergent  
+                        <input type="radio" name="q2" class="points" value="False">Divergent  
+                        <input type="radio" name="q2" class="points" value="False">Hot-spot 
+                        <input type="radio" name="q2" class="points" value="True">Transform
                         <br>
                         <br>  
                         <h2>3.  Which rock type is formed from the break down of rock, depositing, and cementation process?</h2>
-                        <input type="radio" name="rock1" value="sedi"> Sedimentary  
-                        <input type="radio" name="rock1" value="ign"> Igneous
-                        <input type="radio" name="rock1" value="volc"> Volcanic 
-                        <input type="radio" name="rock1" value="meti"> Metamorphic
+                        <input type="radio" name="q3" class="points" value="True"> Sedimentary  
+                        <input type="radio" name="q3" class="points" value="False"> Igneous
+                        <input type="radio" name="q3" class="points" value="False"> Volcanic 
+                        <input type="radio" name="q3" class="points" value="False"> Metamorphic
                         <br>
                         <br>  
                         <h2>4.  Reptiles and dinosaurs were abundant during?</h2>
-                        <input type="radio" name="period1" value="tri">The Triassic Period
-                        <input type="radio" name="period1" value="cret">The Cretaceous Period 
-                        <input type="radio" name="period1" value="juras">The Jurassic Period
-                        <input type="radio" name="period1" value="all">All of the Above 
+                        <input type="radio" name="q4" class="points" value="False">The Triassic Period
+                        <input type="radio" name="q4" class="points" value="False">The Cretaceous Period 
+                        <input type="radio" name="q4" class="points" value="False">The Jurassic Period
+                        <input type="radio" name="q4" class="points" value="True">All of the Above 
                         <br>
                         <br>  
                         <h2>5.  The mid-atlanitic ridge is what kind of plate boundary?</h2>
-                        <input type="radio" name="plates" value="p-div">divergent 
-                        <input type="radio" name="plates" value="p-trans">transform  
-                        <input type="radio" name="plates" value="p-conv">convergent 
-                        <input type="radio" name="plates" value="pdivtrans">divergent and transform  
+                        <input type="radio" name="q5" class="points" value="False">divergent 
+                        <input type="radio" name="q5" class="points" value="False">transform  
+                        <input type="radio" name="q5" class="points" value="False">convergent 
+                        <input type="radio" name="q5" class="points" value="True">divergent and transform  
                         <br>
                         <br>  
                     </form>
@@ -89,16 +87,19 @@
             </div>
             <!-- Div Button to Submit -->
             <div>
-                <input type="submit">
+                <button class="btn3">Submit</button>
                 <br>
                 <br>  
             </div>
-            <!-- Div to Display your results -->
-            <div>
-                <h2 id="finalresults">Your Results</h2>
-                <br>
-                <br>  
-            </div>
+        </div>
+        <!-- Div to Display your results -->
+        <div class = "container testcont2">
+            <h2>Your Results</h2>
+            <div id="finalresults"></div>
+            <div id="wrongquestion"></div>
+            <br>
+            <div> <img src="assets/images/2008_age_of_oceans_noplate.jpg"> </div>
+            <br>  
         </div>
     </div>
 </body>

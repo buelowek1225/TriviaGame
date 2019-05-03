@@ -12,12 +12,17 @@ body {
 
 .button {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .gametitle {
     text-align: center;
     /* margin-left: 50px; */
     display: unset;
+}
+
+h1 {
+    margin-top: 40px;
 }
 
 .timeleft {
@@ -27,15 +32,26 @@ body {
 
 .test2 {
     margin-left: 30px;
+    display: unset;
 }
 
 .testcont {
     margin-left: 100px;
     margin-right: 100px;
-    /* background-color: darkolivegreen; */
     text-align: center;
 }
 
 h2 {
     font-size: 20px;
+}
+
+.testcont2 {
+    margin: unset;
+    text-align: center;
+}
+
+img {
+    border: solid;
+    margin-top: 0px;
+    margin-bottom: 44px;
 }
