@@ -11,6 +11,8 @@ To start: To start hit the 'Start' button. As soon as you hit start the timer wi
 
 To submit you answers: Hit the 'Submit' button. This will tally your score.
 
+GitHub Link: https://buelowek1225.github.io/TriviaGame/
+
 
 
 
